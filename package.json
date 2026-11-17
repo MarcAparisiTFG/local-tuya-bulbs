@@ -66,5 +66,7 @@
     "expo-quick-actions": {
       "@expo/image-utils": "0.12.7"
     }
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Marc Aparisi Rull"
 }

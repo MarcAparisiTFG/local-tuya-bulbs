@@ -1,6 +1,11 @@
+<p align="center">
+  <img src="assets/logo.png" width="160" alt="MarsianApp logo">
+</p>
+
 # MarsianApp: your own app for cheap Tuya smart bulbs
 
-**Made by [Marc Aparisi Rull](https://github.com/MarcAparisiTFG).**
+**Made by [Marc Aparisi Rull](https://github.com/MarcAparisiTFG).** Free to use and build on, **as long as you credit
+me** ([see the license](#license)).
 
 <p align="center">
   <img src="docs/screenshots/home.png" width="240" alt="Home: modes on top and one card per bulb, tinted with its real colour">
@@ -274,6 +279,17 @@ Not affiliated with Tuya, Muvit or Philips.
 
 ## License
 
-[MIT](LICENSE) © Marc Aparisi Rull
+**Free to use, with credit.** You can use this project, change it and build your own apps on it for free, but
+anything you make or publish with it must visibly credit me, with my name and a link to this repo. For example, in
+your README, your app's "About" screen, or the description of your post or video:
+
+```
+Based on MarsianApp by Marc Aparisi Rull
+https://github.com/MarcAparisiTFG/local-tuya-bulbs
+```
+
+Don't present it as your own work, and give your version its own name and logo. The full terms are in
+[LICENSE](LICENSE). This is not an OSI open-source license. © 2026 Marc Aparisi Rull. The MarsianApp name and logo
+are mine.
 
 Made by Marc Aparisi Rull. If you build something with it, I'd love to see it.
