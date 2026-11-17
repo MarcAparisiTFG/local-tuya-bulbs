@@ -20,9 +20,9 @@ Free to use and build on, **as long as you credit me** ([see the license](#licen
 
 ## Why I made it
 
-Almost every affordable smart bulb is a **Tuya** bulb under another brand. They all come with the same closed app:
-you can only do what it lets you do, and every click goes through Tuya's cloud before it reaches a bulb that is two
-metres away from you.
+A huge number of affordable smart bulbs are **Tuya** bulbs under another brand, and they come with Tuya's closed
+app (or a rebranded copy of it): you need their account and their cloud, and you can only do what the app lets you
+do. You can't build anything of your own on top of it.
 
 For a while I'd been looking for lights that were open, that I could program myself. Not because I needed to, but
 because I really wanted to: I wanted the lights at home to work exactly how I imagined them. In the end I went with
@@ -31,8 +31,9 @@ the **Muvit iO** bulbs (MIOBULB008), which are Tuya inside, and set out to open 
 So I studied how these devices talk on the local network: Tuya's local protocols **3.3** (bulbs) and **3.4**
 (plugs), how they encrypt each message with the device's own key, and what each of their data points means. Once
 that was clear, I wrote my own implementation in TypeScript, tested byte for byte, and built everything else on
-top of it: a small bridge that runs at home, HomeKit for Siri, and the app itself. No Tuya app, no cloud, no account:
-the phone talks to the bulb over our own Wi-Fi in a few milliseconds.
+top of it: a small bridge that runs at home, HomeKit for Siri, and the app itself. After getting each
+bulb's key once, there's no Tuya app, no cloud and no account in the loop: the phone talks to the bulb over our own
+Wi-Fi in a few milliseconds.
 
 ### What I tested it with
 
