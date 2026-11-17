@@ -34,6 +34,15 @@ that was clear, I wrote my own implementation in TypeScript, tested byte for byt
 top of it: a small bridge that runs at home, HomeKit for Siri, and the app itself. No Tuya app, no cloud, no account:
 the phone talks to the bulb over our own Wi-Fi in a few milliseconds.
 
+### What I tested it with
+
+These are the Muvit iO devices I bought and use at home with MarsianApp:
+
+| Smart LED bulb (E27) | Smart pack: 3× GU10 spots | Dual smart plug with energy monitor |
+| --- | --- | --- |
+| <img src="docs/photos/muvit-smart-bulb.jpg" width="240" alt="Muvit iO smart LED bulb, standard E27, box"> | <img src="docs/photos/muvit-gu10-spots.jpg" width="240" alt="Muvit iO smart pack of 3 GU10 LED spots, box"> | <img src="docs/photos/muvit-dual-smart-plug.jpg" width="240" alt="Muvit iO dual smart plug with energy monitor, box"> |
+| Tuya protocol 3.3 | Tuya, same Muvit iO app | Tuya protocol 3.4 |
+
 ## Made for my home, open for yours
 
 I made MarsianApp for me and for my home. That's why it has things no generic app has: our modes, the floor plan
@@ -115,7 +124,8 @@ value `03e8` = 1000). That's all a "smart" bulb is.
 
 ### 0. What you need
 
-- Tuya-based Wi-Fi bulbs (tested with **Muvit iO MIOBULB008**; any Tuya v2 bulb using DPS 20–25 should work),
+- Tuya-based Wi-Fi bulbs (tested with the **Muvit iO** E27 bulb MIOBULB008, the GU10 spots and the dual smart
+  plug shown above; any Tuya v2 bulb using DPS 20–25 should work),
   already added to the **Smart Life** or **Tuya Smart** app.
 - A computer on the same Wi-Fi for the bridge (a Mac, a Linux box or a Raspberry Pi) with **Node.js 20+** and
   **Python 3**.
