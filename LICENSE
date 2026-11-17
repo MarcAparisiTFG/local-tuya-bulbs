@@ -1,21 +1,44 @@
-MIT License
+MarsianApp Attribution License
 
-Copyright (c) 2026 Marc Aparisi Rull
+Copyright (c) 2026 Marc Aparisi Rull. All rights reserved except as granted below.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The "Software" is everything in this repository (source code, documentation, the MarsianApp name, logo and
+screenshots), except third-party material that keeps its own license (for example the Fluent Emoji images in
+assets/3d/, under the MIT license by Microsoft).
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Permission
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+You may use, copy, modify, and share the Software, and build your own projects on it, for free, as long as you
+follow every condition in section 2.
+
+2. Conditions
+
+a) Credit. Any project, app, product, repository, fork, article, video or post that uses, includes, or is based on
+   the Software, in whole or in part, must give clear and visible credit to the author, in a place where people
+   using or reading it will see it (for example the README, an "About" or settings screen, or the description of
+   a post or video). The credit must include the author's name and a link to the original repository, for
+   example:
+
+       Based on MarsianApp by Marc Aparisi Rull
+       https://github.com/MarcAparisiTFG/local-tuya-bulbs
+
+b) Keep this notice. Every copy or substantial portion of the Software must include this license and the
+   copyright notice above.
+
+c) No false authorship. You may not present the Software, or a modified version of it, as your own original
+   work, and you may not remove or hide the author's name.
+
+d) Name and logo. The MarsianApp name and logo identify the original project. If you publish a modified
+   version, give it your own name and logo, while still giving the credit in a).
+
+Any use that does not meet these conditions is not permitted. If you break them, this permission ends
+automatically for you.
+
+3. No warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For any use not covered here, contact the author through https://github.com/MarcAparisiTFG.
