@@ -1,5 +1,13 @@
 # MarsianApp: your own app for cheap Tuya smart bulbs
 
+**Made by [Marc Aparisi Rull](https://github.com/MarcAparisiTFG).**
+
+<p align="center">
+  <img src="docs/screenshots/home.png" width="240" alt="Home: modes on top and one card per bulb, tinted with its real colour">
+  <img src="docs/screenshots/bulb.png" width="240" alt="One bulb: full RGB wheel, saved colours, brightness, white and colour">
+  <img src="docs/screenshots/modes.png" width="240" alt="Modes: one tap sets every light">
+</p>
+
 Cheap Wi-Fi bulbs (Muvit iO, and most "Smart Life" / Tuya bulbs) come with an app that sends every click through
 a server in China. **You don't need it.** The bulb listens on your own Wi-Fi, and with its local key you can talk to it
 directly, in a few milliseconds, with no cloud and no account.
@@ -25,6 +33,18 @@ for these lights**: the protocol, the bridge and the UI are all here and small e
   Android widget for a wall tablet.
 - **Places and traffic (optional)**: how long it takes right now to drive to the places you go to, on a live
   traffic map (TomTom free tier, or OSRM without traffic).
+
+## Screenshots
+
+| Home | One bulb | Modes | Mode editor |
+| --- | --- | --- | --- |
+| <img src="docs/screenshots/home.png" width="180" alt="Home"> | <img src="docs/screenshots/bulb.png" width="180" alt="Bulb"> | <img src="docs/screenshots/modes.png" width="180" alt="Modes"> | <img src="docs/screenshots/editor.png" width="180" alt="Mode editor"> |
+
+| House plan | Before going out | Wall tablet |
+| --- | --- | --- |
+| <img src="docs/screenshots/house.png" width="180" alt="House plan with each light in its room"> | <img src="docs/screenshots/outside.png" width="180" alt="Sun, weather, sea, electricity and fuel prices"> | <img src="docs/screenshots/tablet.png" width="420" alt="Tablet layout with the day's summary"> |
+
+These are the demo bulbs: open the web app with `?demo` (step 4 below) to try it without any bulbs.
 
 ## How it works
 
@@ -148,7 +168,8 @@ npx expo start
 ```
 
 and scan the QR code. Both find the bridge automatically (same machine as the dev server) and control the real bulbs.
-Without the bridge you get demo bulbs.
+Without the bridge you get demo bulbs, and `http://localhost:8081/?demo` forces the demo even when the bridge is
+running.
 
 ### 5. Build the real app (optional)
 
@@ -254,3 +275,5 @@ Not affiliated with Tuya, Muvit or Philips.
 ## License
 
 [MIT](LICENSE) © Marc Aparisi Rull
+
+Made by Marc Aparisi Rull. If you build something with it, I'd love to see it.

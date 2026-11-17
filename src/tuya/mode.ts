@@ -33,6 +33,8 @@ export function bridgeHost() {
  */
 export async function detectMode(hub?: string): Promise<{ bulbs: BridgeBulb[]; plugs: BridgePlug[] } | null> {
   if (HAS_TCP && !hub) return null;
+  // en la web, ?demo fuerza las bombillas simuladas aunque haya un puente (para probar o hacer capturas)
+  if (Platform.OS === 'web' && typeof location !== 'undefined' && new URLSearchParams(location.search).has('demo')) return null;
   const url = `http://${HAS_TCP ? hub : bridgeHost()}:${BRIDGE_PORT}`;
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), 1500);
