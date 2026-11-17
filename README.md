@@ -2,10 +2,15 @@
   <img src="assets/logo.png" width="160" alt="MarsianApp logo">
 </p>
 
-# MarsianApp: your own app for cheap Tuya smart bulbs
+# MarsianApp
 
-**Made by [Marc Aparisi Rull](https://github.com/MarcAparisiTFG).** Free to use and build on, **as long as you credit
-me** ([see the license](#license)).
+### The app I made for my home's lights, by [Marc Aparisi Rull](https://github.com/MarcAparisiTFG)
+
+MarsianApp is an app I designed and programmed myself, for my own home: the lights, the modes, the house plan, the
+"before going out" screen, everything. It isn't a template or a copy of another app. Every screen, every
+interaction and every line of code here is mine, made for the way we live at home.
+
+Free to use and build on, **as long as you credit me** ([see the license](#license)).
 
 <p align="center">
   <img src="docs/screenshots/home.png" width="240" alt="Home: modes on top and one card per bulb, tinted with its real colour">
@@ -13,15 +18,34 @@ me** ([see the license](#license)).
   <img src="docs/screenshots/modes.png" width="240" alt="Modes: one tap sets every light">
 </p>
 
-Cheap Wi-Fi bulbs (Muvit iO, and most "Smart Life" / Tuya bulbs) come with an app that sends every click through
-a server in China. **You don't need it.** The bulb listens on your own Wi-Fi, and with its local key you can talk to it
-directly, in a few milliseconds, with no cloud and no account.
+## Why I made it
 
-This repo is the app I built for the bulbs at home. Use it as it is, or as a starting point **to make your own app
-for these lights**: the protocol, the bridge and the UI are all here and small enough to read in an afternoon.
+Almost every affordable smart bulb is a **Tuya** bulb under another brand. They all come with the same closed app:
+you can only do what it lets you do, and every click goes through Tuya's cloud before it reaches a bulb that is two
+metres away from you.
 
-> The app's interface is in Spanish (it's the one we use at home). The code comments are in Spanish too. Everything
-> you need to set it up is in English below.
+For a while I'd been looking for lights that were open, that I could program myself. Not because I needed to, but
+because I really wanted to: I wanted the lights at home to work exactly how I imagined them. In the end I went with
+the **Muvit iO** bulbs (MIOBULB008), which are Tuya inside, and set out to open them.
+
+So I studied how these devices talk on the local network: Tuya's local protocols **3.3** (bulbs) and **3.4**
+(plugs), how they encrypt each message with the device's own key, and what each of their data points means. Once
+that was clear, I wrote my own implementation in TypeScript, tested byte for byte, and built everything else on
+top of it: a small bridge that runs at home, HomeKit for Siri, and the app itself. No Tuya app, no cloud, no account:
+the phone talks to the bulb over our own Wi-Fi in a few milliseconds.
+
+## Made for my home, open for yours
+
+I made MarsianApp for me and for my home. That's why it has things no generic app has: our modes, the floor plan
+with each light in its room, a wall tablet, and a "before going out" screen with the sun, the weather, the sea, the
+traffic to the places we go and the price of electricity and fuel.
+
+But I built it to be adaptable, and I'm sharing the source code so you can use it with your own Tuya bulbs: change
+your town in one file, add your bulbs, and make it yours. Or take only the protocol part and build a completely
+different app for your lights. The tutorial below explains everything, step by step.
+
+> The app's interface and the code comments are in Spanish, because it's the app we use at home. Everything you need
+> to set it up is in English below.
 
 ## What it does
 
