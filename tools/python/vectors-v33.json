@@ -1,0 +1,27 @@
+{
+  "key": "0123456789abcdef",
+  "devId": "bf1234567890abcdef",
+  "vectors": [
+    {
+      "name": "control_on",
+      "cmd": 7,
+      "seqno": 7,
+      "payloadJson": "{\"devId\":\"bf1234567890abcdef\",\"uid\":\"bf1234567890abcdef\",\"t\":\"1794691732\",\"dps\":{\"20\":true}}",
+      "hex": "000055aa000000070000000700000077332e33000000000000000000000000d652f952e5585d3b065bf07e1e6e0045232f1f1d2668f6cdcb02e1136c3d1ce0e02334451948c72d94e58f74591d65571a772d6899bab4691a7d0c60e39752b785e8b31dc4977b7c811d12cc948643bee4c592aae41aea7494225c786d11b51109804ac10000aa55"
+    },
+    {
+      "name": "control_color",
+      "cmd": 7,
+      "seqno": 7,
+      "payloadJson": "{\"devId\":\"bf1234567890abcdef\",\"uid\":\"bf1234567890abcdef\",\"t\":\"1794691732\",\"dps\":{\"20\":true,\"21\":\"colour\",\"24\":\"00ff00ffff\"}}",
+      "hex": "000055aa000000070000000700000097332e33000000000000000000000000d652f952e5585d3b065bf07e1e6e0045232f1f1d2668f6cdcb02e1136c3d1ce0e02334451948c72d94e58f74591d65571a772d6899bab4691a7d0c60e39752b785e8b31dc4977b7c811d12cc948643be953dc4549f58f9a03c77f50f143301310999b2ca35064a7352bcc258cb2ed0f2affe15bd0f289c702f2acbee97316a28b6cbe77f0000aa55"
+    },
+    {
+      "name": "dp_query",
+      "cmd": 10,
+      "seqno": 7,
+      "payloadJson": "{\"gwId\":\"bf1234567890abcdef\",\"devId\":\"bf1234567890abcdef\",\"uid\":\"bf1234567890abcdef\",\"t\":\"1794691732\"}",
+      "hex": "000055aa000000070000000a0000007805008afd0d6b71c01e3489f2007668ce8379456b3fd3754168206f2b402de9b5c82f34a18a953f05b3dcc6409554b5528cf3c2d6c7171b786517db5aae13156f820d5f8b347c198c1726e4d4aa359cd7ea4497a9227788fe52a2c9481d449827434bd65444a7c7aeb7d68e19d5c9fdfc707b92300000aa55"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@import 'uniwind';
+@import 'panelui-native/theme.css';
+@source '../node_modules/panelui-native/src';
+
+/* Las piezas de PanelUI que usamos (rueda de color, campos, avisos) en Urbanist */
+@theme {
+  --font-normal: Urbanist_500Medium;
+  --font-medium: Urbanist_600SemiBold;
+  --font-semibold: Urbanist_700Bold;
+  --font-bold: Urbanist_800ExtraBold;
+}
+
+/* Tema claro de MarsianApp (DESIGN.md): fondo lavanda, tinta casi negra */
+@layer theme {
+  :root {
+    @variant light {
+      --color-background: #f4f0fa;
+      --color-foreground: #17131f;
+      --color-card: #ffffff;
+      --color-popover: #ffffff;
+      --color-overlay: #ffffff;
+      --color-primary: #17131f;
+      --color-primary-foreground: #ffffff;
+      --color-muted-foreground: #6b6577;
+      --color-border: #e8e2f0;
+      --color-input: #e8e2f0;
+      --color-ring: #5b2ec4;
+    }
+  }
+}

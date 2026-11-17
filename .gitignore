@@ -1,0 +1,61 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# Your home: keys and local state (never commit these)
+devices.json
+devices*.json
+tinytuya.json
+tuya-raw.json
+snapshot.json
+tv.json
+tv-pairing.json
+tomtom.json
+homekit.json
+homekit-data/
+modes.json
+places.json
+routes.json
+energy.json
+*.apk
+venv/
+.venv/
+__pycache__/

@@ -1,0 +1,173 @@
+{
+  "expo": {
+    "name": "MarsianApp",
+    "slug": "marsianapp",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "MarsianApp habla con vuestras bombillas por el Wi-Fi de casa.",
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        },
+        "INAlternativeAppNames": [
+          {
+            "INAlternativeAppName": "Marsiana"
+          }
+        ]
+      },
+      "bundleIdentifier": "com.example.marsianapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#401e9b",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.example.marsianapp",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.CHANGE_WIFI_MULTICAST_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-app-intents",
+      "./plugins/withSpanish",
+      [
+        "expo-quick-actions",
+        {
+          "androidIcons": {
+            "modo_fire": {
+              "foregroundImage": "./assets/shortcuts/fire.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_headphone": {
+              "foregroundImage": "./assets/shortcuts/headphone.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_tv": {
+              "foregroundImage": "./assets/shortcuts/tv.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_party": {
+              "foregroundImage": "./assets/shortcuts/party.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_disco": {
+              "foregroundImage": "./assets/shortcuts/disco.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_palette": {
+              "foregroundImage": "./assets/shortcuts/palette.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_sun": {
+              "foregroundImage": "./assets/shortcuts/sun.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_book": {
+              "foregroundImage": "./assets/shortcuts/book.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_focus": {
+              "foregroundImage": "./assets/shortcuts/focus.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_dinner": {
+              "foregroundImage": "./assets/shortcuts/dinner.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_movie": {
+              "foregroundImage": "./assets/shortcuts/movie.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_rose": {
+              "foregroundImage": "./assets/shortcuts/rose.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_moon": {
+              "foregroundImage": "./assets/shortcuts/moon.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_couch": {
+              "foregroundImage": "./assets/shortcuts/couch.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_bed": {
+              "foregroundImage": "./assets/shortcuts/bed.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_alien": {
+              "foregroundImage": "./assets/shortcuts/alien.png",
+              "backgroundColor": "#F4F0FA"
+            },
+            "modo_bulb": {
+              "foregroundImage": "./assets/shortcuts/bulb.png",
+              "backgroundColor": "#F4F0FA"
+            }
+          }
+        }
+      ],
+      [
+        "react-native-android-widget",
+        {
+          "fonts": [
+            "./node_modules/@expo-google-fonts/urbanist/500Medium/Urbanist_500Medium.ttf",
+            "./node_modules/@expo-google-fonts/urbanist/600SemiBold/Urbanist_600SemiBold.ttf",
+            "./node_modules/@expo-google-fonts/urbanist/700Bold/Urbanist_700Bold.ttf",
+            "./node_modules/@expo-google-fonts/urbanist/800ExtraBold/Urbanist_800ExtraBold.ttf"
+          ],
+          "widgets": [
+            {
+              "name": "Casa",
+              "label": "MarsianApp · Casa",
+              "description": "El tiempo en casa, la semana, tus sitios y tus modos",
+              "minWidth": "480dp",
+              "minHeight": "320dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 3,
+              "maxResizeWidth": "1400dp",
+              "maxResizeHeight": "900dp",
+              "resizeMode": "horizontal|vertical",
+              "updatePeriodMillis": 1800000
+            }
+          ]
+        }
+      ]
+    ],
+    "scheme": "marsianapp",
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      }
+    },
+    "experiments": {
+      "inlineModules": {
+        "watchedDirectories": [
+          "app-intents"
+        ]
+      }
+    }
+  }
+}

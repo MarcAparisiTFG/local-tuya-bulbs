@@ -1,0 +1,20 @@
+internal import ExpoAppIntents
+internal import ExpoModulesCore
+
+/// Registered Expo inline module that wires app-target App Intents code to expo-app-intents.
+/// Do not change the name of this class.
+final class AppIntentsSetup: Module {
+  public func definition() -> ExpoModulesCore.ModuleDefinition {
+    Name("AppIntentsSetup")
+
+    // cuando la app publica la lista de modos, Siri vuelve a aprender sus nombres
+    OnCreate {
+      Task {
+        await AppIntentDispatcher.shared.setShortcutsRefreshHandler {
+          CasaShortcuts.updateAppShortcutParameters()
+        }
+        CasaShortcuts.updateAppShortcutParameters()
+      }
+    }
+  }
+}
